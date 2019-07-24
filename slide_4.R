@@ -56,6 +56,8 @@ abline(v = 15)
 abline(v = 30)
 abline(v = 45)
 
+x$month <- factor(x$month, ordered = TRUE)
+x$month_year <- factor(x$month_year, levels = x$month_year, ordered = TRUE)
 
 ggplot(data = x, aes(x = month_year, y = cases)) +
   geom_bar(stat = "identity") + 
@@ -65,6 +67,16 @@ ggplot(data = x, aes(x = month_year, y = cases)) +
   theme_bw() +
   theme(strip.placement = "outside",
         strip.background = element_rect(fill = NA, colour = "green"),
-        panel.spacing = unit(0,"cm")) +
+        panel.spacing = unit(0,"cm"),
+        panel.grid.major.x = element_line(colour = NA, size = NULL, linetype = NULL,
+                                          lineend = NULL, color = NULL, arrow = NULL,
+                                          inherit.blank = FALSE),
+        panel.grid.major.y = element_line(colour = "black", size = 1, linetype = NULL,
+                                          lineend = NULL, color = NULL, arrow = NULL,
+                                          inherit.blank = FALSE),
+        plot.title = element_text(color = "green", size = 14, face = "bold.italic")) +
   ggtitle("Graph 1:Distribution of AFP Cases by Month, Pakistan 2015-2019*") +
-  xlab("")
+  xlab("") +
+  ylab("Cases (n)") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  scale_y_continuous(breaks = round(seq(min(x$cases), max(x$cases), by = 50), 1))

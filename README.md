@@ -5,8 +5,11 @@ Throughout the workshop, the particular functions and examples used will be shap
 
 Course content:
 
+#### DAY 2: Introduction
+
 * Introduction to R
-  + History
+  + history
+  + R for data analysis
   + RStudio GUI
   + Console, scripts
 * Basic types, indexing
@@ -15,15 +18,25 @@ Course content:
 * Read and writing data
   + base
   + Excel, web
-* Exploring data
-  + summary statistics
-  + tables
-* Pre-processing
+  
+#### DAY 3: Handling data
+
+* Pre-processing/cleaning
   + base: merge, aggregate
   + tidy data: dplyr
   + regular expression
+* Exploring data
+  + summary statistics
+  + tables
+  + epidemiology
+  
+#### DAY 4: Outputs
+
+* Basic models/tests
+  + Regression
+  + Chi-square, etc
 * Plotting
   + base
   + ggplot2
 * Maps
-
+* RMarkdown
