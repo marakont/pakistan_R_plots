@@ -1,15 +1,29 @@
 # Pakistan R training
 ## 16th - 20th September 2019
 
-Polio data sets.
+Throughout the workshop, the particular functions and examples used will be shaped by several Polio data sets, provided in advance.
 
-Cours content:
+Course content:
 
-* Introdution to R
+* Introduction to R
+  + History
+  + RStudio GUI
+  + Console, scripts
 * Basic types, indexing
+  + base
+  + dates and times
 * Read and writing data
+  + base
+  + Excel, web
 * Exploring data
-* Pre-processing: merge, joins, aggregate
-* Plotting: base and ggplot2
+  + summary statistics
+  + tables
+* Pre-processing
+  + base: merge, aggregate
+  + tidy data: dplyr
+  + regular expression
+* Plotting
+  + base
+  + ggplot2
 * Maps
 
