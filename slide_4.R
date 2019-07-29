@@ -80,4 +80,7 @@ ggplot(data = x, aes(x = month_year, y = cases)) +
   ylab("Cases (n)") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   scale_y_continuous(breaks = round(seq(min(x$cases), max(x$cases), by = 50), 1)) + 
-  labs(caption = "* Afp.rec Data as of  15-07-2019")
+  labs(caption = "* Afp.rec Data as of  15-07-2019") +
+  theme(
+    plot.caption = element_text(size = 7, face = "italic")
+  )
